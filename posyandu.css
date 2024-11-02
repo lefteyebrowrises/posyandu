@@ -46,6 +46,10 @@ body {
     margin-top: 20px;
   }
 
+  .container.detail {
+    justify-content: center;
+  }
+
   .sidebar {
     width: 25%;
     padding: 10px;
@@ -67,6 +71,7 @@ body {
   }
 
   .article p {
+    text-align: justify;
     margin-bottom: 10px;
   }
 
@@ -90,6 +95,7 @@ body {
   }
 
   .gallery p {
+    text-align: justify;
     margin-top: 5px;
   }
 
@@ -175,6 +181,7 @@ body {
   }
   
   p {
+    text-align: justify;
     margin-bottom: 10px;
   }
   
@@ -189,7 +196,7 @@ body {
   }
   
   a {
-    color: #007bff;
+    color: black;
     text-decoration: none;
   }
   
@@ -203,9 +210,97 @@ body {
     width: 100%;
     background-color: #000;
     color: #fff;
-    text-align: center;
+    text-align: right;
     padding: 5px;
     margin-top: 100px;
+  }
+  
+  .footer p {
+    text-align: center;
+  }
+  
+  .breadcrumb {
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .breadcrumb a {
+    color: #337ab7;
+    text-decoration: none;
+  }
+  
+  .breadcrumb a:hover {
+    color: #23527c;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .meta-description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .featured-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .share-button {
+    margin-bottom: 20px;
+  }
+  
+  .share-button a {
+    background-color: #337ab7;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .share-button a:hover {
+    background-color: #23527c;
+  }
+  
+  .author {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .related-articles {
+    margin-bottom: 20px;
+  }
+  
+  .related-articles h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .related-articles ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .related-articles li {
+    margin-bottom: 10px;
+  }
+  
+  .related-articles a {
+    color: #337ab7;
+    text-decoration: none;
+  }
+  
+  .related-articles a:hover {
+    color: #23527c;
   }
 
   /* For screens with a maximum width of 768px (e.g., tablets) */
@@ -264,6 +359,7 @@ body {
       font-size: 1rem;
     }
     p {
+      text-align: justify;
       font-size: 0.9rem;
     }
   }
