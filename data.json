@@ -1,6 +1,7 @@
 [
     {
         "title":"Manfaat Penyuluhan Kesehatan Gigi dan Mulut untuk Lansia di Posyandu Tunas Mekar RT 001 / RW 004",
+        "link":"./berita/manfaat-penyuluhan.html",
         "date":"01 Agustus 2024",
         "place":"Posyandu Tunas Mekar",
         "image":"penyuluhan-gigi-thumbnail.png",
@@ -9,6 +10,7 @@
     },
     {
         "title":"13 Penyakit Gigi dan Mulut yang Paling Umum Terjadi",
+        "link":"./berita/manfaat-penyuluhan.html",
         "date":"15 Juli 2024",
         "place":"Posyandu Tunas Mekar",
         "image":"penyakit-gigi-thumbnail.png",
@@ -17,6 +19,7 @@
     },
     {
         "title":"Gerakan 1.000 Hari Pertama Kehidupan: Investasi Terbaik untuk Masa Depan Anak",
+        "link":"./berita/manfaat-penyuluhan.html",
         "date":"22 Juni 2024",
         "place":"Aula Serba Guna RT 001 / RW 004",
         "image":"gerakan-1000-hari-thumbnail.png",
@@ -25,6 +28,7 @@
     },
     {
         "title":"Jumantik Serentak di Lingkungan RT 001 / RW 004",
+        "link":"./berita/manfaat-penyuluhan.html",
         "date":"01 Juni 2024",
         "place":"Lingkungan RT 001 / RW 004",
         "image":"jumantik-thumbnail.jpeg",
