@@ -27,8 +27,7 @@ function displayCards(data) {
     });
 }
 
-// Function to display news detail on the detail page
-// Function to display news detail on the detail page
+// function to display news on the detail page
 function displayNewsDetail(data) {
     const newsDetail = document.getElementById('news-detail');
     newsDetail.innerHTML = ''; // Clear any existing content
@@ -50,11 +49,34 @@ function displayNewsDetail(data) {
     const detailElement = document.createElement('div');
     detailElement.innerHTML = data.detail; // This is the detailed content you want to show
 
+    // Create a video element if a video URL is provided
+    let videoElement; // Declare videoElement here
+
+    if (data.video) {
+        videoElement = document.createElement('video'); // Initialize videoElement here
+        videoElement.controls = true; // Add controls for the video
+        videoElement.width = 640; // Set the width of the video
+
+        const sourceElement = document.createElement('source');
+        sourceElement.src = `../video/${data.video}`; // Adjust the path as necessary
+        sourceElement.type = 'video/mp4'; // Adjust the type based on your video format
+
+        videoElement.appendChild(sourceElement); // Append the source to the video element
+
+        // Fallback text for unsupported browsers
+        videoElement.innerHTML = 'Your browser does not support the video tag.';
+    }
+
     // Append all elements to the news detail container
     newsDetail.appendChild(titleElement);
     newsDetail.appendChild(datePlaceElement);
     newsDetail.appendChild(imageElement);
-    newsDetail.appendChild(detailElement); // Only append the detailElement
+    newsDetail.appendChild(detailElement); // Append the detailElement
+
+    // Append the video element if it exists
+    if (videoElement) {
+        newsDetail.appendChild(videoElement); // Append the video element to the container
+    }
 }
 
 // Fetching data from the JSON file for the main page
