@@ -204,6 +204,11 @@ body {
     text-decoration: underline;
   }
 
+  video {
+    width: 100%; /* Make the video responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
   .footer {
     left: 0;
     bottom: 0;

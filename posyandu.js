@@ -50,21 +50,18 @@ function displayNewsDetail(data) {
     detailElement.innerHTML = data.detail; // This is the detailed content you want to show
 
     // Create a video element if a video URL is provided
-    let videoElement; // Declare videoElement here
+    let videoElement; // Declare videoElement here 
 
     if (data.video) {
         videoElement = document.createElement('video'); // Initialize videoElement here
         videoElement.controls = true; // Add controls for the video
-        videoElement.width = 640; // Set the width of the video
-
+        videoElement.className = 'responsive-video';
+    
         const sourceElement = document.createElement('source');
         sourceElement.src = `../video/${data.video}`; // Adjust the path as necessary
         sourceElement.type = 'video/mp4'; // Adjust the type based on your video format
-
+    
         videoElement.appendChild(sourceElement); // Append the source to the video element
-
-        // Fallback text for unsupported browsers
-        videoElement.innerHTML = 'Your browser does not support the video tag.';
     }
 
     // Append all elements to the news detail container
