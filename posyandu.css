@@ -84,49 +84,6 @@ body {
     text-decoration: underline;
   }
 
-  .gallery {
-    margin-bottom: 20px;
-  }
-
-  .gallery img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  .gallery p {
-    text-align: justify;
-    margin-top: 5px;
-  }
-
-  .gallery a {
-    display: block;
-    padding: 5px;
-    background-color: #eee;
-    text-align: center;
-    text-decoration: none;
-  }
-
-  .gallery a:hover {
-    background-color: #ddd;
-  }
-
-  .lainnya {
-    margin-bottom: 20px;
-  }
-
-  .lainnya a {
-    display: block;
-    padding: 5px;
-    background-color: #eee;
-    text-align: center;
-    text-decoration: none;
-  }
-
-  .lainnya a:hover {
-    background-color: #ddd;
-  }
-
   .row {
     display: flex;
     flex-wrap: wrap;
@@ -307,6 +264,48 @@ body {
   .related-articles a:hover {
     color: #23527c;
   }
+
+  .our-team {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.our-team h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team-member {
+    border: 1px solid #ccc; /* Border around each member */
+    border-radius: 8px; /* Rounded corners */
+    margin: 10px; /* Space between members */
+    padding: 15px; /* Padding inside each card */
+    width: 200px; /* Fixed width for each member card */
+    text-align: center; /* Center align text */
+}
+
+.team-member img {
+    width: 120px; /* Make the image responsive */
+    height: 120px; /* Maintain aspect ratio */
+    border-radius: 50%; /* Circular image */
+}
+
+.team-member h3 {
+    margin: 10px 0 5px; /* Space around the name */
+    font-size: 1.2em; /* Slightly larger font size */
+}
+
+.team-member p {
+    text-align: center;
+    margin: 5px 0; /* Space around the paragraphs */
+    font-size: 0.9em; /* Smaller font size for description */
+}
 
   /* For screens with a maximum width of 768px (e.g., tablets) */
   @media only screen and (max-width: 768px) {
